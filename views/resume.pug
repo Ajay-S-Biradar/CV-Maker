@@ -1,0 +1,96 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='wi   dth=device-width, initial-scale=1.0')
+  title Document
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge;chrome=1')
+  meta(http-equiv='Content-Type' content='text/html;charset=UTF-8')
+  meta(name='google' content='notranslate')
+  // Google Fonts, Normalize, and Font Awesome
+  link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cardo|Montserrat:300,400,500&subset=latin-ext' crossorigin='anonymous')
+  link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' integrity='sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=' crossorigin='anonymous')
+  link(rel='stylesheet' type='text/css' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' crossorigin='anonymous')
+  // Custom Styles
+  link(rel='stylesheet' type='text/css' href='/static/1.css')
+  link(rel='stylesheet' type='text/css' href='/static/2.css')
+  link(rel='stylesheet' type='text/css' href='/static/3.css')
+  title
+    | Joe Smith - Deadline-oriented software engineer with lots of experience. Solid track record of architecting solutions that exceed client expectations.
+section#save
+  section.sheet(data-page-number='1')
+    aside
+      section.contact
+        h6 Contact
+        ul
+          li
+            p
+              i.fa.fa-map-marker-alt(class='Location')
+              | 
+          li
+            p
+              i.fa.fa-phone(class='Cellphone')
+              | 
+          li
+            p
+              i.fa.fa-envelope(class='Email')
+              |
+          li
+            p
+              i.fab.fa-github().github 
+                | hii
+            li
+
+      section.skills
+        h6#tech Technologies 
+        ul
+          li
+            | JavaScript
+      section.skills
+        h6 Skills
+        ul#sk
+          
+      section.skills
+    section
+      header.name(aria-label='Joe Smith')
+        text#JOE-SMITH
+
+        h6 Software Engineer Extraordinaire
+        hr
+      section
+        section.summary
+          h6 Summary
+          p
+            | Deadline-oriented software engineer with lots of experience.
+            | Solid track record of architecting solutions that exceed client expectations.
+        section.education
+          h6 Education
+          ol
+            li
+              div
+                p.sanserif M.S., Human Computer Interaction
+                time Sept &apos;12 &ndash; May &apos;14
+              div
+                span Massachusetts Institute of Technology
+                span
+            li
+              div
+                p.sanserif B.S., Computer Science
+                time Sept &apos;08 &ndash; May &apos;12
+              div
+                span Harvard University
+                span GPA: 3.91
+        section.experience
+          h6 Experience
+          ol
+            li
+              header
+                p.sanserif Senior Software Engineer
+                time 2016 &ndash; Present
+              span Google
+              ul
+                li Developed scalable database indexing technology
+                li Created GraphQL APIs for accessing Google Earth
+                li Leveraged Waymo datasets to double traffic statistics accuracy
+script(src="/static/data.js") 
