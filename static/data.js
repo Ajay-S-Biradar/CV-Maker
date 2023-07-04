@@ -6,8 +6,10 @@ function processData(data) {
     const cell = document.querySelector('.Cellphone')
     const mail = document.querySelector('.Email')
     const git = document.querySelector('.github')
+    const job = document.querySelector('#job')
     // const 
     console.log(git.innerHTML)
+    job.innerText = data.job
     var github = data.github
     git.innerHTML = github
     mail.innerText = data.email
@@ -29,3 +31,12 @@ fetch('/api/data')
     .then((data)=> {
         processData(data) 
     })
+
+
+// const access = document.querySelector('#degree')
+// access.firstChild.innerText = 'higher school'
+// access.lastChild.innerText = 'jun 21 - sept 25'
+
+// const education = document.querySelector('.education')
+// console.log(education)
+
