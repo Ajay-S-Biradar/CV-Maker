@@ -22,6 +22,6 @@ app.get('/api/data',(req,res)=>{
     res.json(data)
 })
 
-app.listen(3400,()=>{
+app.listen(4000,()=>{
     console.log('running')
 })

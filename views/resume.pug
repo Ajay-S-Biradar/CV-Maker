@@ -43,10 +43,9 @@ section#save
             li
 
       section.skills
-        h6#tech Technologies 
-        ul
-          li
-            | JavaScript
+        h6 Technologies 
+        ul#tech
+ 
       section.skills
         h6 Skills
         ul#sk
@@ -67,24 +66,23 @@ section#save
         
         section.education
           h6 Education
-          ol
-            li
-              div#degree
-                p.sanserif M.S., Human Computer Interaction
-                time Sept &apos;12 &ndash; May &apos;14
-              div#cname
-                span Massachusetts Institute of Technology
+          ol.degree
+              //- div
+              //-   //- p.sanserif M.S., Human Computer Interaction
+              //-   //- time Sept &apos;12 &ndash; May &apos;14
+              //- div#cname
+                
 
-        section.experience
-          h6 Experience
-          ol
-            li
-              header
-                p.sanserif Senior Software Engineer
-                time 2016 &ndash; Present
-              span Google
-              ul
-                li Developed scalable database indexing technology
-                li Created GraphQL APIs for accessing Google Earth
-                li Leveraged Waymo datasets to double traffic statistics accuracy
+        //- section.experience
+        //-   h6 Experience
+        //-   ol
+        //-     li
+        //-       header
+        //-         p.sanserif Senior Software Engineer
+        //-         time 2016 &ndash; Present
+        //-       span Google
+        //-       ul
+        //-         li Developed scalable database indexing technology
+        //-         li Created GraphQL APIs for accessing Google Earth
+        //-         li Leveraged Waymo datasets to double traffic statistics accuracy
 script(src="/static/data.js") 
