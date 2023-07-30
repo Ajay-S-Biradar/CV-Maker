@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path')
 const pug = require('pug')
 
+const port = process.env.PORT || 8000
+
 const app = express()
 app.use(express.urlencoded({extended:true}))
 app.set('view engine','pug')
@@ -44,6 +46,6 @@ app.get('/api/data2',(req,res)=>{
     res.json(info2)
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("runnnig")
 })
