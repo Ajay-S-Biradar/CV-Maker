@@ -43,9 +43,9 @@ section#save
             li
 
       section.skills
-        h6 Technologies 
-        ul#tech
- 
+        h6#tech Technologies 
+        ul
+          
       section.skills
         h6 Skills
         ul#sk
@@ -55,34 +55,23 @@ section#save
       header.name(aria-label='Joe Smith')
         text#JOE-SMITH
 
-        h6#job Software Engineer Extraordinaire
+        h6 
         hr
-      section
+      section 
         section.summary
           h6 Summary
           p
-            | Deadline-oriented software engineer with lots of experience.
-            | Solid track record of architecting solutions that exceed client expectations.
-        
+          | Deadline-oriented software engineer with lots of experience.
+          | Solid track record of architecting solutions that exceed client expectations.
         section.education
           h6 Education
-          ol.degree
-              //- div
-              //-   //- p.sanserif M.S., Human Computer Interaction
-              //-   //- time Sept &apos;12 &ndash; May &apos;14
-              //- div#cname
+          ol.edu
+            li Secondary School Education
+            li Higher Secondary Education
+            li Degree College
+            
+        section.experience
+          h6 Experience
+          ol
                 
-
-        //- section.experience
-        //-   h6 Experience
-        //-   ol
-        //-     li
-        //-       header
-        //-         p.sanserif Senior Software Engineer
-        //-         time 2016 &ndash; Present
-        //-       span Google
-        //-       ul
-        //-         li Developed scalable database indexing technology
-        //-         li Created GraphQL APIs for accessing Google Earth
-        //-         li Leveraged Waymo datasets to double traffic statistics accuracy
 script(src="/static/data.js") 
