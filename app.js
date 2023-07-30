@@ -30,7 +30,10 @@ app.get('/further',(req,res) =>{
 app.post('/further',(req,res)=>{
     info2 =  req.body
     console.log(req.body)
-    res.redirect('/resume')
+    setTimeout(() => {
+        res.redirect('/resume')
+      }, 3000);
+    
 })
 
 app.get('/resume', (req, res) => {
