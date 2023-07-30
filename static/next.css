@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: x-large;
+}
+
+h3{
+    color: rgb(141, 192, 90);
+}
+
+li {
+    list-style: none;
+    color: aqua;
+}
+
+li a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 12px;
+    position: relative;
+    z-index: 999;
+}   
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color: aqua;
+}
+
+
+
+nav .logo{
+    padding-top: 10px;
+    color: aqua;
+    text-decoration: none;
+}
+
+.heading{
+    position: relative;
+    justify-content: center;
+    text-align: center ;
+    padding-top: 30px;
+    z-index: 999;
+}
+
+.center{
+    margin: 60px auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    /* border:2px solid blue; */
+    z-index: 999;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
+}
+
+
+.name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+}
+
+.pad{
+    padding: 10px 0px;
+}
+
+.col{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+img{
+    width: 200px;
+    padding: 0 30px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+    width: 80%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style:double;
+    margin: 10px 0px;
+}
+
+.skills li{
+    padding: 5px;
+}
+
+.heading__bg {
+    position: absolute;
+    z-index: 99;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background: #a0b3a2;
+    /* -webkit-transform: skewY(-6deg); */
+    transform: skewY(-6deg);
+      /*to tilt the background   */
+}
+
+.btn{
+    margin: auto;
+    padding: 6px;
+    display: flex;
+    border: none;
+    background-color: seashell;
+    width: 90%;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(238, 228, 228);
+}
+
+.additional{
+    display: block;
+    justify-content: center;
+}
+
+.next{
+    margin: auto;
+    width: 130px;
+    background-color:#86c78c ;
+}
+
+a{
+    text-decoration: none ;
+    text-shadow: #86c78c;
+    font-size: larger;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.exp{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.plus{
+    background-color: rebeccapurple;
+    border-radius: 20px;
+    display:inline-flex;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 20px; */
+    height: 20px;
+}
+.plus:hover{
+    cursor: pointer;
+}
+
+.next{
+    margin-bottom: 20px;
+}
