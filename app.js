@@ -31,9 +31,11 @@ app.post('/further',(req,res)=>{
     res.redirect('/resume')
 })
 
-app.get('/resume',(req,res)=>{
-    res.render('resume')
-})
+app.get('/resume', (req, res) => {
+    setTimeout(() => {
+      res.render('resume');
+    }, 3000);
+  });
 
 app.get('/api/data1',(req,res)=>{
     res.json(info1)
@@ -42,6 +44,6 @@ app.get('/api/data2',(req,res)=>{
     res.json(info2)
 })
 
-app.listen(4000,()=>{
+app.listen(3000,()=>{
     console.log("runnnig")
 })
