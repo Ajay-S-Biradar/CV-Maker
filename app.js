@@ -2,26 +2,46 @@ const express = require('express')
 const path = require('path')
 const pug = require('pug')
 
-const app = express() 
+const app = express()
 app.use(express.urlencoded({extended:true}))
 app.set('view engine','pug')
 app.set('views',path.join(__dirname,'views'))
 app.use(express.static(path.join(__dirname)))
 
+var info1;
+var info2
+
 app.get('/',(req,res) =>{
-    res.render('1')
+    res.render('personalinfo')
 })
-var data
+
 app.post('/',(req,res)=>{
+    info1 =  req.body
     console.log(req.body)
-    data = req.body
+    res.redirect('/further')
+})
+
+app.get('/further',(req,res) =>{
+    res.render('next')
+})
+
+app.post('/further',(req,res)=>{
+    info2 =  req.body
+    console.log(req.body)
+    res.redirect('/resume')
+})
+
+app.get('/resume',(req,res)=>{
     res.render('resume')
 })
 
-app.get('/api/data',(req,res)=>{
-    res.json(data)
+app.get('/api/data1',(req,res)=>{
+    res.json(info1)
+})
+app.get('/api/data2',(req,res)=>{
+    res.json(info2)
 })
 
 app.listen(4000,()=>{
-    console.log('running')
+    console.log("runnnig")
 })
